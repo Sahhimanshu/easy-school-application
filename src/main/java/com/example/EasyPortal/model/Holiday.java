@@ -1,7 +1,7 @@
 package com.example.EasyPortal.model;
 
 public class Holiday {
-    private enum Type{
+    public enum Type{
         FEDERAL,FESTIVAL;
     }
 
