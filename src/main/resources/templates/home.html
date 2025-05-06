@@ -3,7 +3,7 @@ Author: W3layouts
 Author URL: http://w3layouts.com
 -->
 <!doctype html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <!-- Required meta tags -->
@@ -17,8 +17,10 @@ Author URL: http://w3layouts.com
 </head>
 
 <body>
+    <!-- header -->
+    <div th:replace="~{header :: header}">...</div>
+    <!-- //header -->
 
-    <div th:replace = "header :: header"></div>
     <!-- banner section -->
     <section id="home" class="w3l-banner py-5">
         <div class="banner-content">
@@ -340,7 +342,7 @@ Author URL: http://w3layouts.com
                         <li class="phone-sec me-lg-4"><i class="fas fa-phone-volume"></i>
                             <a class="call-style-w3" href="tel:+1(23) 456 789 0000">+1(23) 673 458 1111</a>
                         </li>
-                        <li><a th:href="@{/courses}" class="btn btn-style btn-style-2 mt-lg-0 mt-3">Join for free</a>
+                        <li><a th:href="@{/contact}" class="btn btn-style btn-style-2 mt-lg-0 mt-3">Join for free</a>
                         </li>
                     </ul>
                 </div>
@@ -350,7 +352,9 @@ Author URL: http://w3layouts.com
     <!-- //call block -->
 
     <!-- footer block -->
-    <div th:replace = "footer :: footer"></div>
+    <div th:replace="~{footer :: footer}">...</div>
+    <!-- //footer block -->
+
     <!-- Js scripts -->
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
